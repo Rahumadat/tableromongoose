@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.mostrarAnimales {
+    border: 3px solid rgb(45, 225, 60);
+    display: flex;
+    flex-direction: column;
+}

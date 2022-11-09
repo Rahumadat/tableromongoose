@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Esta es la pagina INDEX</h1>
+    
+    <% for (var x in infoAnimales) { %>
+    <div class="mostrarAnimales">
+        <h5>Nombre: <a href="/detalle/<%= infoAnimales[x]._id %>"> <%= infoAnimales[x].nombreAnimal %> </a></h5>
+        
+        <h4><a href="/destruir/<%= infoAnimales[x]._id %>"> Eliminar </a></h5>
+        <h4><a href="/editar/<%= infoAnimales[x]._id %>"> Actualizar </a></h5>
+        <!-- <h5>Tipo Animal: <%= infoAnimales[x].tipoAnimal %> </h5> -->
+        <!-- <h5>Edad: <%= infoAnimales[x].edad %> </h5> -->
+    </div>         
+    <% } %>
+    
+</body>
+</html>
